@@ -1,0 +1,95 @@
+<!-- Begin contact modal -->
+<div class="modal fade contact-modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h3 class="modal-title text-center bold white">Contact Us</h3>
+			</div>
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<label for="contact-name">Name</label>
+						<input type="text" class="form-control contact-name" value="nicholas">
+						<span class="pull-right contact-error contact-name-error"></span>
+					</div>
+					<div class="form-group">
+						<label for="contact-email">Email</label>
+						<input type="email" class="form-control contact-email" value="nick@test.com">
+						<span class="pull-right contact-error contact-email-error"></span>
+					</div>
+					<div class="form-group">
+						<label for="contact-phone">Phone</label>
+						<input type="text" class="form-control contact-phone" value="12345678">
+						<span class="pull-right contact-error contact-phone-error"></span>
+					</div>
+					<div class="form-group">
+						<label for="contact-company">Company / Organization</label>
+						<input type="text" class="form-control contact-company" value="nickcompany">
+						<span class="pull-right contact-error contact-company-error"></span>
+					</div>
+					<div class="form-group">
+						<label for="contact-message">Message</label>
+						<textarea rows="3" class="form-control contact-message"></textarea>
+						<span class="pull-right contact-error contact-message-error"></span>
+					</div>
+					{{!-- <div class="radio">
+						<label>
+							<input type="radio" name="contact-option" value="trial" checked>
+							Free Trial
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="contact-option" value="demo">
+							Demo
+						</label>
+					</div> --}}
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="center-block btn btn-danger btn-lg contact-submit">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End contact modal -->
+
+<!-- BEGIN TOP NAVIGATION BAR -->
+<nav class="navbar navbar-default frontpage-navbar" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="img/logo_inverse.png">
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#/about">About</a></li>
+				<li><a href="#/features">Features</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#/careers">Careers</a></li>
+				<li>
+					<a href="#">
+						<button class="btn btn-danger btn-lg btn-trial" data-toggle="modal" data-target=".contact-modal">
+							Free Trial
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- END TOP NAVIGATION BAR -->
